@@ -4,14 +4,11 @@ import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 
-import java.util.List;
-
-@Getter
 @AllArgsConstructor
 @NoArgsConstructor
-public class TrelloBoardDto {
-    private String name;
+@Getter
+public class TrelloListDto {
     private String id;
-    private List<TrelloListDto> lists;
+    private String name;
+    private boolean isClosed;
 }
-

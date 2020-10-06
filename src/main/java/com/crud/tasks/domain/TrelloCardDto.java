@@ -4,14 +4,12 @@ import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 
-import java.util.List;
-
-@Getter
 @AllArgsConstructor
 @NoArgsConstructor
-public class TrelloBoardDto {
+@Getter
+public class TrelloCardDto {
     private String name;
-    private String id;
-    private List<TrelloListDto> lists;
+    private String description;
+    private String pos;
+    private String listId;
 }
-
